@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Learning Land</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="home-view active" id="homeView" aria-label="Category selection">
+        <button class="icon-button music-toggle" id="musicButton" type="button" aria-label="Turn music on or off" title="Music">&#9835;</button>
+        <div class="sky-scene" aria-hidden="true">
+          <span class="cloud cloud-one"></span>
+          <span class="cloud cloud-two"></span>
+          <span class="balloon balloon-one"></span>
+          <span class="balloon balloon-two"></span>
+        </div>
+        <header class="hero">
+          <p class="eyebrow">Tap, listen, and learn</p>
+          <h1>Little Learning Land</h1>
+          <p class="hero-copy">Pick a colorful card and meet happy fruits, animals, shapes, vehicles, and more.</p>
+        </header>
+        <div class="category-grid" id="categoryGrid"></div>
+      </section>
+
+      <section class="learn-view" id="learnView" aria-label="Learning category">
+        <div class="learn-topbar">
+          <button class="icon-button back-button" id="backButton" type="button" aria-label="Go back to categories">&#8592;</button>
+          <div>
+            <p class="eyebrow">Now exploring</p>
+            <h2 id="categoryTitle">Fruits</h2>
+          </div>
+          <button class="icon-button sound-button" id="soundButton" type="button" aria-label="Replay sound">&#8635;</button>
+        </div>
+        <div class="play-area" id="playArea"></div>
+        <div class="spotlight" id="spotlight" aria-live="polite">
+          <div class="sparkle-field" id="sparkleField" aria-hidden="true"></div>
+          <div class="featured-item" id="featuredItem"></div>
+          <div class="speech-bubble" id="speechBubble"></div>
+        </div>
+        <div class="subtitle-bar" id="subtitleBar" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
